@@ -1,0 +1,13 @@
+input {
+  padding: 10px;
+}
+
+input[type="submit"] {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+}

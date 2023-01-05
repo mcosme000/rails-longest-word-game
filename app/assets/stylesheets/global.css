@@ -1,0 +1,40 @@
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-size: 18px;
+}
+.container {
+  width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 90%;
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.button {
+  background: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 3px;
+  display: inline-block;
+}
