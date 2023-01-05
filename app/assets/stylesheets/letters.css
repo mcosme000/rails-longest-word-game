@@ -1,0 +1,12 @@
+.letters {
+  display: flex;
+}
+
+.letter {
+  padding: 10px 20px;
+  font-size: 30px;
+  border-radius: 2px;
+  margin: 10px;
+  background: #3498db;
+  box-shadow: 3px 3px 5px rgba(144, 144, 144, 0.117);
+}

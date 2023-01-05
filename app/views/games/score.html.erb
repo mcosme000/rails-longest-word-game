@@ -1,0 +1,11 @@
+<h1>Result</h1>
+
+<% if @included === false %>
+  <p>Sorry, <%= @attempt %> can't be built out of <%= @letters.split(' ').join(', ') %></p>
+<% elsif @english_word %>
+  <p><strong>Congratulations! </strong><%= @attempt %> is an English word ✨</p>
+<% else %>
+  <p>Sorry but <%= @attempt %> is not an English word 😭</p>
+<% end %>
+
+<%= link_to "Play again", new_path %>
