@@ -136,6 +136,7 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.10-arm64-darwin)
       racc (~> 1.4)
+    pg (1.4.5)
     public_suffix (5.0.1)
     puma (5.6.5)
       nio4r (~> 2.0)
@@ -231,6 +232,7 @@ DEPENDENCIES
   debug
   importmap-rails
   jbuilder
+  pg
   puma (~> 5.0)
   rails (~> 7.0.4)
   rest-client
