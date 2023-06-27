@@ -10,6 +10,6 @@
 <form action="score" method="POST" data-turbo="false">
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
   <%= hidden_field_tag :letters, @letters %>
-  <input type="text" name="attempt" placeholder="Guess your word!">
+  <input type="text" name="word" placeholder="Guess your word!">
   <input type="submit" value="Check!">
 </form>

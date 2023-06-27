@@ -1,11 +1,15 @@
 <h1>Result</h1>
+<%= @word %>
 
-<% if @included === false %>
-  <p>Sorry, <%= @attempt %> can't be built out of <%= @letters.split(' ').join(', ') %></p>
-<% elsif @english_word %>
-  <p><strong>Congratulations! </strong><%= @attempt %> is an English word ✨</p>
+<% if @included %>
+  <% if @english_word %>
+    <p><strong>Congratulations!</strong> <%= @word %> is a valid English word!</p>
+  <% else %>
+    <p>This word is not an english word.</p>
+  <% end %>
 <% else %>
-  <p>Sorry but <%= @attempt %> is not an English word 😭</p>
+  <p>Sorry, but <%= @word %> is not created from the letters array</p>
 <% end %>
+
 
 <p class="button"><%= link_to "Play again", new_path %></p>
